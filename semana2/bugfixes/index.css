@@ -40,7 +40,12 @@ div>p:first-child {
     width:  25px;
     
 }
-
+.lupa:hover{
+    opacity: 0.3;
+}
+.lupa:active{
+    opacity: 0.1;
+}
 
 .botao-amarelo {
     background-color: #ffaf43;
@@ -152,7 +157,3 @@ td button:hover{
     color: white;
 }
 
-ol.decimal {
-    list-style-type: decimal;
-    color: white;
-	}
