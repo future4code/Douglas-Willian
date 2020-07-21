@@ -6,31 +6,75 @@ body {
     font-size: 10px;
     color: white;
 }
+#top-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 50px;
+}
 
 .green-background {
     background-color: green;
+    display: grid;
+    /* width: 570px; */
+    height: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 .yellow-background {
     background-color: yellow;
+    display: grid;
+    height: 50px;
+    align-items: center;
+    justify-items: center;
+}
+#middle-container {
+    display: grid;
+    grid-template-columns: 33.333% 43.333% 23.333%;
+    height: 30vh;
 }
 
 .pink-background {
     background-color: fuchsia;
+    display: grid;
+   height: 580px;
+    align-items: center;
+    justify-items: center;
+    grid-row: 2;
 }
 
 .blue-background {
     background-color: blue;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    height: 30vh;
+    width: 50vw;
 }
 
 .red-background {
     background-color: red;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 15vh;
+    width: 25vw;
 }
+
 
 .lightgreen-background {
     background-color: lightgreen;
+    align-items: center;
+    display: grid;
+    justify-items: center;
+    height:15vh;
+    width:25vw;
 }
 
 .purple-background {
     background-color: purple;
+    height: 2.4vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
