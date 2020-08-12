@@ -17,12 +17,17 @@ class Post extends React.Component {
   }
 
   onClickCurtida = () => {
-    this.setState({
-      curtido:!this.state.curtido,
-      numeroCurtidas: 1
-    })
-  }
+    console.log('Curtiu!')
+    if(this.state.curtido = true){
+      this.setState({curtido: this.state.curtido = true});
+      this.setState({numeroCurtidas:this.state.numeroCurtidas + 1});
+    }if(this.state.numeroCurtidas === 1){
+      this.state({curtido: this.state.curtido = false});
+      this.setState({numeroCurtidas: this.state.numeroCurtidas - 1})
 
+    }}
+    
+  
   onClickComentario = () => {
     this.setState({
       comentando: !this.state.comentando
@@ -43,7 +48,7 @@ class Post extends React.Component {
       iconeCurtida = iconeCoracaoPreto
     } else {
       iconeCurtida = iconeCoracaoBranco 
-      this.state.numeroCurtidas = 0
+      
     }
 
     let componenteComentario
