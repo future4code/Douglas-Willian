@@ -28,13 +28,13 @@ function App() {
       <div className="page-section-container">
         <CardPequeno 
         imagem="https://png.pngtree.com/png-clipart/20190516/original/pngtree-email--envelope-icon-png-image_3566081.jpg"
-        titulo="Email"
+        titulo="Email:"
         conteudo="Doug.willlian@gmail.com"
 
         />
           <CardPequeno 
         imagem="https://w7.pngwing.com/pngs/30/177/png-transparent-ip-address-computer-icons-encapsulated-postscript-address-miscellaneous-logo-video-player.png"
-        titulo="endereco"
+        titulo="Endereco:"
         conteudo="rua santa maria 624 ap 7"
 
         />
