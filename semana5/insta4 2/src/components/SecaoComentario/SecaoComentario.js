@@ -8,7 +8,7 @@ export class SecaoComentario extends Component {
 
 	// Importante que essa função seja uma arrow function
   // Estava errado nos arquivos iniciais dados
-	onChangeComentario = (event) => {
+	onChangeMensagem = (event) => {
 	  console.log(event.target.value)
     this.setState({valorInputComentario: event.target.value})
 	}
