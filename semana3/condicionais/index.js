@@ -351,4 +351,4 @@ else {
     console.log('Inseriu o dado incorreto.')
 }
 
-// Funcionou de primeira, nem acreditei! Sei que existem outras maneiras de fazer, mas como a ideia era utilizar o que aprendemos, utilizei só if/else e deu certo! xD
+
