@@ -12,7 +12,7 @@ function App() {
       <div className="page-section-container">
         <h2>Dados pessoais</h2>
         <CardGrande 
-          imagem="https://scontent.fbfh3-2.fna.fbcdn.net/v/t1.0-9/80098601_3153765664639175_6738784609179271168_n.jpg?_nc_cat=108&_nc_sid=7aed08&_nc_eui2=AeEKqd8mTrCvBnVZeadpAry2TwDvk4g78LZPAO-TiDvwtvICADwBuYmpw2sTLmFlaA5MMBjE3dqVwX98Wukq2dAT&_nc_ohc=uQe_TxIZeikAX_rGwOs&_nc_ht=scontent.fbfh3-2.fna&oh=d3118be3d394c9d19e96951dfc91d745&oe=5F578B81" 
+          imagem="https://scontent.fbfh2-1.fna.fbcdn.net/v/t1.0-9/89867969_3347519295263810_3208763023095234560_n.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_eui2=AeF1DeJXSfOlz1bkaNye1iNsK_2dASrdbdUr_Z0BKt1t1ec_HjIWQOgpbc3FvqQohdWtleNX_hFA_Tt9s3UM9kXe&_nc_ohc=V0nkPgOuj3YAX8LgH28&_nc_ht=scontent.fbfh2-1.fna&oh=1791b88d013c79c80030a01b9c01d398&oe=5FAC6D14" 
           nome="Douglas Willian" 
           descricao=" Oi, meu nome é Douglas sou aluno de engenharia eletrica na Universidade tecnologica federal do parana,
           trabalhava com analista de redes/infra, atualmente estou mudando de area e migrando para desenvolvedor web full stack,
