@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import logo from './'
 
 const HeaderStyle = styled.header`
-background: #964F8D;
+background: #a690e8;
 width: 100%;
 height: 8vh;
 display: flex;
@@ -19,7 +19,7 @@ font-size: 12px;
 `
 
 const FooterStyle = styled.footer`
-background: #784071;
+background: #a690e8;
 width: 100%;
 height: 5vh;
 display: flex;
@@ -48,7 +48,7 @@ text-align: center;
   
 
 const ButtonStyle = styled.button`
-    background-color: #964F8D;
+    background-color: #a690e8;
     margin: 20px 0;
     text-decoration: none;
     border: none;
