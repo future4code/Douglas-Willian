@@ -1,23 +1,54 @@
 import React from 'react';
 import './App.css';
 import Post from './components/Post/Post';
+import styled from 'styled-components'
 import logo from './'
-import styled from "styled-components"
 
+const HeaderStyle = styled.header`
+background: #a690e8;
+width: 100%;
+height: 8vh;
+display: flex;
+justify-content: center;
+align-items: center;
+`
 
-const InputForm = styled.input`
-    background-color: #F1F1F3;
-    -webkit-box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.25);
-    box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.25);
-    border: none;
-    width: 300px;
-    height: 35px;
-    margin-top: 30px;
-    outline: none;`
+const HeaderTitle = styled.p`
+color: white;
+font-size: 12px;
+`
 
-    const ButtonForm = styled.button`
-    background-color: #A020F0;
+const FooterStyle = styled.footer`
+background: #a690e8;
+width: 100%;
+height: 5vh;
+display: flex;
+justify-content: center;
+align-items: center;
+`
+
+const InputStyle = styled.input`
+  background-color: #F1F1F3;
+  -webkit-box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.25);
+  box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.25);
+  border: none;
+  width: 300px;
+  height: 35px;
+  margin-top: 30px;
+  outline: none;`
+
+const TitleHeader = styled.h1`
+font-size: 2rem;
+color: white;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+text-align: center;
+`
+
+  
+
+const ButtonStyle = styled.button`
+    background-color: #a690e8;
     margin: 20px 0;
     text-decoration: none;
     border: none;
@@ -29,10 +60,10 @@ const InputForm = styled.input`
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: bold;
-    transition: all 400ms ease;
     -webkit-box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.25);
     box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.25);`
+
 class App extends React.Component {
 
   state = {
@@ -47,7 +78,7 @@ class App extends React.Component {
           fotoPost: 'https://picsum.photos/id/1/200/150'
     },
     {
-          nomeUsuario: 'maria',
+          nomeUsuario: 'mateus',
           fotoUsuario:'https://picsum.photos/id/2/200/1500',
           fotoPost: 'https://picsum.photos/id/2/200/150'
     }
@@ -56,6 +87,21 @@ class App extends React.Component {
     valorInputUserPhoto: "",
     valorInputPostPhoto: ""
   }
+  
+
+  onChangeInputUser = (event) => {
+    this.setState({valorInputUser: event.target.value})
+  }
+
+  onChangeInputUserPhoto = (event) => {
+    this.setState({valorInputUserPhoto: event.target.value})
+  }
+
+  onChangeInputPostPhoto = (event) => {
+    this.setState({valorInputPostPhoto: event.target.value})
+  }
+  
+
 
   adicionaPost = () => {
 
@@ -78,25 +124,12 @@ class App extends React.Component {
   }
 
 
-  onChangeInputUser = (event) => {
-    this.setState({valorInputUser: event.target.value})
-  }
-
-  onChangeInputUserPhoto = (event) => {
-    this.setState({valorInputUserPhoto: event.target.value})
-  }
-
-  onChangeInputPostPhoto = (event) => {
-    this.setState({valorInputPostPhoto: event.target.value})
-    console.log(event.target.value)
-  }
-
-  
 
   render() {
 
     const listaPost = this.state.posts.map((post) => {
       
+      console.log(post)
       return(
 
       <div>
@@ -109,26 +142,30 @@ class App extends React.Component {
       )
 
     })
+
+  
+
     return (
       <div className={'app-container'}>
-        <InputForm
+        <HeaderStyle><TitleHeader>Insta4</TitleHeader></HeaderStyle>
+        <InputStyle
         value={this.state.valorInputUser}
         onChange={this.onChangeInputUser}
         placeholder={"Insira o nome de usuário"}
         />
-        <InputForm
+        <InputStyle
         value={this.state.valorInputUserPhoto}
         onChange={this.onChangeInputUserPhoto}
         placeholder={"Insira o link da sua foto de usuário"}
         />
-        <InputForm
+        <InputStyle
         value={this.state.valorInputPostPhoto}
         onChange={this.onChangeInputPostPhoto}
         placeholder={"Insira o link da foto do seu post"}
         />
-        <ButtonForm onClick={this.adicionaPost}>Adicionar Post</ButtonForm>
+        <ButtonStyle onClick={this.adicionaPost}>Adicionar Post</ButtonStyle>
         <div>{listaPost}</div>
-
+        <FooterStyle><HeaderTitle>Esse projeto foi criado foi criado por um aluno da labenu</HeaderTitle></FooterStyle>
       </div>
     );
   }
